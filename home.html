@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Da Lampi</title>
+    <script>
+        function acenderLampi() {
+            window.document.getElementById('luz').src = "./fotos/acessa.png"
+        }
+
+        function apagarLampi() {
+            window.document.getElementById('luz').src = "./fotos/apagada.jpg"
+        }
+
+        function quebrarLampi() {
+            window.document.getElementById('luz').src = "./fotos/quebrada.jpg"
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Vc pode acender, apagar e quebrar a LAMPI</h1>
+    <img src="./fotos/apagada.jpg" alt="300" height="300" id="luz" onmouseover="acenderLampi()" onmouseout="apagarLampi()" onclick="quebrarLampi()">
+</body>
+
+</html>
